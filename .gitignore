@@ -70,3 +70,13 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+MakeGameDev_RoadRun/.vsconfig
+MakeGameDev_RoadRun/Library/
+MakeGameDev_RoadRun/Build/
+MakeGameDev_RoadRun/Logs/
+MakeGameDev_RoadRun/obj/
+MakeGameDev1_SpaceShooting/.vsconfig
+MakeGameDev1_SpaceShooting/Build/
+MakeGameDev1_SpaceShooting/Library/
+MakeGameDev1_SpaceShooting/Logs/
+MakeGameDev1_SpaceShooting/obj/

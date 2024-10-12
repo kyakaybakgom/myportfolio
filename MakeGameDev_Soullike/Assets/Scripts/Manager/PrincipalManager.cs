@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
 
+/// <summary>
+/// manager를 singleton으로 호출 할 수 있도록 관리하는 매니저
+/// </summary>
 public class PrincipalManager : MGDManager
 {
+    private GameObject principalUpdaterObj = null;
+    private PrincipalUpdateManager principalUpdater = null;
     // isntance
     private static PrincipalManager Instance = null;
 
@@ -12,7 +17,9 @@ public class PrincipalManager : MGDManager
     protected Dictionary<string, MGDManager> mgdManagerMap = new Dictionary<string, MGDManager>();
 
     // class script name array
-    protected string[] strManagerClassName = { };
+    protected string[] strManagerClassName = {
+                                                "InputKeyManager",
+                                             };
 
     // singleton initialize
     public static PrincipalManager instance
@@ -33,7 +40,7 @@ public class PrincipalManager : MGDManager
     // 생성시 초기화
     public void OnceInit()
     {
-        InitManager();
+        InitManagerUpdater();
 
         MGDManager pkManger = null;
 
@@ -65,13 +72,32 @@ public class PrincipalManager : MGDManager
         }
     }
 
-    public void InitManager()
+    public void InitManagerUpdater()
     {
-
+        if(principalUpdater == null)
+        {
+            principalUpdaterObj = new GameObject("PrincipalUpdater");
+            principalUpdater = principalUpdaterObj.AddComponent<PrincipalUpdateManager>();
+            GameObject.DontDestroyOnLoad(principalUpdaterObj);
+        }
     }
 
     public override void InitializeManager()
     {
         base.InitializeManager();
+    }
+
+    public void UpdatePrincipalManager(float fDeltaTime)
+    {
+        if (mgdManagerMap.Count > 0)
+        {
+            foreach(MGDManager pkManager in mgdManagerMap.Values)
+            {
+                if(pkManager != null)
+                {
+                    pkManager.UpdateManger(fDeltaTime);
+                }
+            }
+        }
     }
 }

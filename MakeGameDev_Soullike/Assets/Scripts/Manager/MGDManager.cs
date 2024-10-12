@@ -1,11 +1,8 @@
+using System;
 using UnityEngine;
 
-public delegate void updateEventHandler();  // update callback
-
-public class MGDManager : MonoBehaviour
+public class MGDManager 
 {
-    public event updateEventHandler updateEvent;    // update callback event
-
     public MGDManager() 
     { 
     }
@@ -15,8 +12,8 @@ public class MGDManager : MonoBehaviour
     { 
     }
 
-    public virtual void Update()
+    public virtual void UpdateManger(float fDeltaTime)
     {
-        updateEvent?.Invoke();
+        
     }
 }

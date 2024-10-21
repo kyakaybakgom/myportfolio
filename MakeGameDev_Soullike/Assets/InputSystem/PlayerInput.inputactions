@@ -1,0 +1,200 @@
+{
+    "name": "PlayerInput",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "04b17ebd-4d2a-438c-9579-ca5642d28a0d",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "9fb50033-f933-4963-900d-765d1099a5d8",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Fire",
+                    "type": "Button",
+                    "id": "0ac1a839-5a43-4006-90b5-1a7d5602f4f0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Fire2",
+                    "type": "Button",
+                    "id": "581242fc-db54-40a5-b2be-601b2c2ef70a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Guard",
+                    "type": "Button",
+                    "id": "65d27a13-622a-4de9-9377-e8986fc3d6e9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Parry",
+                    "type": "Button",
+                    "id": "6d106fec-e469-4205-a6b2-b125d0506342",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CameraControll",
+                    "type": "Value",
+                    "id": "e047d321-34f2-4a65-b2b1-d30a166d7e44",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "412b7224-ca1f-4b0b-b228-97e0f5cee2eb",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "072b1334-3b37-4b3d-b7e2-7ec7e3ca4759",
+                    "path": "<HID::BDA MOGA XP5-X Plus>/{Primary2DMotion}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d59eae74-d562-4d48-8f12-6d9a843bf9f0",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b9da4d9b-ac41-4ea0-af96-f0151df42a1a",
+                    "path": "<HID::BDA MOGA XP5-X Plus>/button8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "23e933c0-973b-44ea-84d1-48975a2f6d64",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "57cfd25d-f073-4346-ba34-a6cbf083071b",
+                    "path": "<HID::BDA MOGA XP5-X Plus>/button10",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "df074f78-a9ec-4a02-ae5a-4b3e51afdda8",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Guard",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "525cad66-f71a-40e4-8626-ed6a26cc89f5",
+                    "path": "<HID::BDA MOGA XP5-X Plus>/button7",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Guard",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8afa451a-81f1-452d-b5bf-5026a9468cc3",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Parry",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "72f912e0-6a75-4e50-898a-b6ce569fe945",
+                    "path": "<HID::BDA MOGA XP5-X Plus>/button9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Parry",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "140d41e8-f0ab-4306-bf24-505d28aaec25",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraControll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4327318d-6484-4fb4-a09c-71a8d731e33a",
+                    "path": "<HID::BDA MOGA XP5-X Plus>/{Secondary2DMotion}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraControll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

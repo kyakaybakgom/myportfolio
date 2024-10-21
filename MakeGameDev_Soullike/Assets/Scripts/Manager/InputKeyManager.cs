@@ -8,11 +8,13 @@ using UnityEngine;
 public class InputKeyManager : MGDManager
 { 
     private Dictionary<KeyCode, Action> keyCodes;
+    private Dictionary<string, Action>  strKeyActions;
 
     // 초기화
     public override void InitializeManager()
     {
         keyCodes = new Dictionary<KeyCode, Action>();
+        strKeyActions = new Dictionary<string, Action>();
 
         Debug.Log("InputKeyManager Init...");
 
@@ -37,6 +39,30 @@ public class InputKeyManager : MGDManager
         }
     }
 
+    // strKey 추가
+    public void AddKey(string keyStr, Action action)
+    {
+        if (strKeyActions.ContainsKey(keyStr) == false)
+        {
+            strKeyActions.Add(keyStr, action);
+        }
+    }
+
+    // strKey 삭제
+    public void RemoveKey(string keyStr)
+    {
+        if (strKeyActions.ContainsKey(keyStr))
+        {
+            strKeyActions.Remove(keyStr);
+        }
+    }
+
+    // strKey clear
+    public void ClearStrKey()
+    {
+        strKeyActions.Clear();
+    }
+
     // key 입력 받아 처리
     public override void UpdateManger(float fDeltaTime)
     {
@@ -48,6 +74,14 @@ public class InputKeyManager : MGDManager
                 {
                     key.Value.Invoke();
                 }
+            }
+        }
+
+        if (strKeyActions.Count > 0)
+        {
+            foreach (var key in strKeyActions)
+            {
+                key.Value.Invoke();
             }
         }
     }

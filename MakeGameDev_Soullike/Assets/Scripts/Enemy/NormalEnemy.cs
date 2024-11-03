@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -10,6 +9,8 @@ public class NormalEnemy : BaseState
     protected GameObject _npc;
     protected NavMeshAgent _agent;
     protected Transform _transform;
+
+    protected float crossFadeTime = 0.1f;
 
     public NormalEnemy(GameObject pNpc, NavMeshAgent pAgent, Animator pAnimator, Transform pEnemy)
     {
@@ -22,7 +23,7 @@ public class NormalEnemy : BaseState
 
     public override void UpdateState(float fDeltaTime)
     {
-        Debug.Log("normalEnemy Update State...");
+        //Debug.Log("normalEnemy Update State...");
         Process();
     }
 }
@@ -41,6 +42,7 @@ public class NormalEnemyIdle : NormalEnemy
 
     public override void StateStart()
     {
+        _animator.SetCrossFade(currentState.ToString(), crossFadeTime, null);
         base.StateStart();
     }
 
@@ -78,6 +80,7 @@ public class NormalEnemyMove : NormalEnemy
 
     public override void StateStart()
     {
+        _animator.SetCrossFade(currentState.ToString(), crossFadeTime, null);
         base.StateStart();
     }
 
@@ -115,6 +118,7 @@ public class NormalEnemyPatrol : NormalEnemy
 
     public override void StateStart()
     {
+        _animator.SetCrossFade(currentState.ToString(), crossFadeTime, null);
         base.StateStart();
     }
 
@@ -152,6 +156,7 @@ public class NormalEnemyPursue : NormalEnemy
 
     public override void StateStart()
     {
+        _animator.SetCrossFade(currentState.ToString(), crossFadeTime, null);
         base.StateStart();
     }
 
@@ -189,6 +194,7 @@ public class NormalEnemyAttack : NormalEnemy
 
     public override void StateStart()
     {
+        _animator.SetCrossFade(currentState.ToString(), crossFadeTime, null);
         base.StateStart();
     }
 
@@ -226,6 +232,7 @@ public class NormalEnemyDamaged : NormalEnemy
 
     public override void StateStart()
     {
+        _animator.SetCrossFade(currentState.ToString(), crossFadeTime, null);
         base.StateStart();
     }
 
@@ -263,6 +270,7 @@ public class NormalEnemyGroggy : NormalEnemy
 
     public override void StateStart()
     {
+        _animator.SetCrossFade(currentState.ToString(), crossFadeTime, null);
         base.StateStart();
     }
 
@@ -300,6 +308,7 @@ public class NormalEnemyDead : NormalEnemy
 
     public override void StateStart()
     {
+        _animator.SetCrossFade(currentState.ToString(), crossFadeTime, null);
         base.StateStart();
     }
 

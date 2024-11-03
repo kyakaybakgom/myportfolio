@@ -129,6 +129,10 @@ public class PrincipalManager : MGDManager
         {
             baseStateMap.Add(strKey, pBaseState);
         }
+        else
+        {
+            baseStateMap[strKey] = pBaseState;
+        }
     }
 
     public void RemoveState<T>(string strKey)

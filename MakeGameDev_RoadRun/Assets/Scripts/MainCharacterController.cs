@@ -113,16 +113,16 @@ public class MainCharacterController : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         if (dataManager.GameAct.Equals(false)) return;
+
+        if (other.CompareTag(m_Star))
+        {
+            DataManager.Instance.ScoreData += m_score;
+            m_scoreManager.ScoreUpdateFunc();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.CompareTag(m_Star))
-        {
-            dataManager.ScoreData += m_score;
-            m_scoreManager.ScoreUpdateFunc();
-        }
-
         if (collision.transform.CompareTag(m_Plane))
         {
             if (!isGrounded)

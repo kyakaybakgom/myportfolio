@@ -13,7 +13,7 @@ public class StarManager : MonoBehaviour {
     //audioClip
     public AudioClip m_effectAduio;
 
-    float m_speed = 0.2f;
+    float m_speed = 0.02f;
     
     private void Awake()
     {

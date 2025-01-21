@@ -84,3 +84,11 @@ MakeGameDev_RoadRun/Temp/
 MakeGameDev_Soullike/Library/
 MakeGameDev_Soullike/Logs/
 MakeGameDev_Soullike/Temp/
+MakeGame_SlidingPuzzle/.vsconfig
+MakeGame_SlidingPuzzle/Library/
+MakeGame_SlidingPuzzle/Logs/
+MakeGame_SlidingPuzzle/obj/
+MakeGame_SlidingPuzzle/Assets/Firebase/
+MakeGame_SlidingPuzzle/Assets/GeneratedLocalRepo/
+MakeGame_SlidingPuzzle/Assets/Plugins/iOS/Firebase
+MakeGame_SlidingPuzzle/Assets/Plugins/tvOS/Firebase

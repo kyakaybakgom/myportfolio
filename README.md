@@ -7,3 +7,7 @@ my unity portfolio git
   - top view shooting
 2. MakeGameDev_RoadRun
   - A running action game that copies TempleRun
+3. MakeGame_SlidingPuzzle
+  - A sliding puzzle game that copies the original game
+  - Firebase auth, realtime database,
+  - test id : aaa@a.com, pw : 123456789

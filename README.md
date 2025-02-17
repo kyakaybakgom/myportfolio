@@ -11,3 +11,7 @@ my unity portfolio git
   - A sliding puzzle game that copies the original game
   - Firebase auth, realtime database,
   - test id : aaa@a.com, pw : 123456789
+4. Studing_Firebase
+  - Firebase Study and test.
+  - Firebase auth, realtime database,
+  - test id : aaa@a.com, pw : 123456789

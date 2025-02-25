@@ -28,7 +28,7 @@ namespace CodingTest
         {
             int[] arr = new int[] { 2, 3, 1, 5, 4 };
             Array.Sort(arr, (a, b) => a.CompareTo(b));
-
+            Math.Min
             foreach(int i in arr)
                 Console.WriteLine(i);
         }
@@ -142,6 +142,41 @@ namespace CodingTest
                 if (n % i == 0)
                     answer += i;
             }
+
+            return answer;
+        }
+
+        // 문자열 겹쳐쓰기
+        public static string OverWriteing(string my_string, string overwrite_string, int s)
+        {Math.ma
+            string answer = "";
+            overwrite_string.Length
+            string s1 = my_string.Substring(0, s);
+            answer = s1 + overwrite_string;
+            return answer;
+        }
+
+        // 분수의 덧셈
+        public static SumFraction(int numer1, int denom1, int numer2, int denom2)
+        {
+            int numer = (numer1 * denom2) + (numer2 * denom1);  // 분자합
+            int denom = denom1 * denom2;    // 분모
+
+            int max = numer;
+            int maxNum = 0;
+
+            // 나눠지는 최대 값 찾기
+            for (int i = 1; i <= max; i++)
+            {
+                if (numer % i == 0 && denom % i == 0)
+                    maxNum = i;
+            }
+
+            // 찾은 최대 값으로 분자와 분모 나누기
+            int resultNumer = numer / maxNum;
+            int resultDenom = denom / maxNum;
+
+            int[] answer = new int[] { resultNumer, resultDenom };
 
             return answer;
         }

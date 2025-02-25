@@ -19,3 +19,4 @@ my unity portfolio git
   - Coding Test Study
   - 프로그래머스
   - C# Coding
+  - 점 찍기, 디스크 컨트롤러, 문자열을 정수로 바꾸기, 약수의 합, 문자열 겹쳐쓰기, 분수의 덧셈

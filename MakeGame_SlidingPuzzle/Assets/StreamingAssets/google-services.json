@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "279445981634",
-    "project_id": "myslidingpuzzle-7ff6c",
-    "storage_bucket": "myslidingpuzzle-7ff6c.firebasestorage.app"
+    "project_number": "",
+    "project_id": "",
+    "storage_bucket": ""
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:279445981634:android:fa8af0f8b497a150fdae5b",
+        "mobilesdk_app_id": "",
         "android_client_info": {
-          "package_name": "com.baeggomgames.MakeGame_SlidingPuzzle"
+          "package_name": ""
         }
       },
       "oauth_client": [
         {
-          "client_id": "279445981634-iqu1a1ianqfpmkpou4fplqjl6jtib5lq.apps.googleusercontent.com",
+          "client_id": "",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyATLYgar2uUfdUKb7PfYaxoCkswcVhIOAM"
+          "current_key": ""
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "279445981634-iqu1a1ianqfpmkpou4fplqjl6jtib5lq.apps.googleusercontent.com",
+              "client_id": "",
               "client_type": 3
             }
           ]
